@@ -47,13 +47,13 @@ WHERE EXTRACT(year FROM "hire_date") = 1986
 
 SELECT 
  d.dept_no, 
- d.dept_no, 
+ b.dept_name, 
  d.emp_no, 
  e.last_name,
  e.first_name,
  d.from_date,
  d.to_date
-FROM employees e, dept_manager d;
+FROM employees e, dept_manager d, departments b;
 
 4. List the department of each employee with the following information: employee number, last name, first name, and department name.
 
